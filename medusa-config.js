@@ -13,14 +13,28 @@ switch (process.env.NODE_ENV) {
     break;
   case "development":
     ENV_FILE_NAME = ".env";
-  default:
-    ENV_FILE_NAME = ".env";
+  // default:
+  //   ENV_FILE_NAME = ".env";
     break;
 }
 
-try {
-  dotenv.config({ path: process.cwd() + "/" + ENV_FILE_NAME });
-} catch (e) { }
+// try {
+//   dotenv.config({ path: process.cwd() + "/" + ENV_FILE_NAME });
+// } catch (e) { }
+
+const path = process.cwd() + "/" + ENV_FILE_NAME;
+const result = dotenv.config({ path });
+
+if (result.error) {
+  console.error("❌ Failed to load .env file:", path);
+  console.error(result.error);
+} else {
+  console.log("✅ Loaded .env from:", path);
+}
+
+console.log("🧪 ENV PORT:", process.env.PORT);
+console.log("🧪 ENV DATABASE_URL:", process.env.DATABASE_URL);
+
 
 // CORS when consuming Medusa from admin
 const ADMIN_CORS =
