@@ -20,11 +20,21 @@
     "checkJs": false
   },
   "include": ["src/", "datasource.js"],
+  // "exclude": [
+  //   "**/__tests__",
+  //   "**/__fixtures__",
+  //   "node_modules",
+  //   "build",
+  //   ".cache"
+  // ]
   "exclude": [
-    "**/__tests__",
-    "**/__fixtures__",
-    "node_modules",
-    "build",
-    ".cache"
-  ]
+  "**/__tests__",
+  "**/__fixtures__",
+  "**/*.spec.ts",
+  "**/*.test.ts",
+  "node_modules",
+  "build",
+  ".cache"
+]
+
 }

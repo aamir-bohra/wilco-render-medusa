@@ -4,5 +4,17 @@
     /* Emit a single file with source maps instead of having a separate file. */
     "inlineSourceMap": true,
   },
-  "exclude": ["src/admin", "**/*.spec.js"]
+  // "exclude": ["src/admin", "**/*.spec.js"]
+  "types": ["@types/jest"],
+
+  "exclude": [
+    "src/admin",
+    "**/*.spec.ts",
+    "**/*.spec.js",
+    "**/*.test.ts",
+    "**/*.test.js",
+    "**/__tests__",
+    "**/__fixtures__"
+  ]
+
 }
