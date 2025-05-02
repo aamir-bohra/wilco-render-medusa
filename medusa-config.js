@@ -86,6 +86,8 @@ const projectConfig = {
   // Uncomment the following lines to enable REDIS
   // redis_url: REDIS_URL
 };
+console.log(`🚀 Medusa server listening on port ${projectConfig.port}`);
+
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
