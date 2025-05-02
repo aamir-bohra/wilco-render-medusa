@@ -1,0 +1,113 @@
+// [
+//     {
+//       "id": "loc_corvallis",
+//       "certification": ["Certified Groomer", "Senior Pet Stylist"],
+//       "address": [
+//         {
+//           "address": "1905 NE Four Acre Place, Corvallis, OR 97330",
+//           "zip_code": "97330"
+//         }
+//       ],
+//       "time_slots": ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM"]
+//     },
+//     {
+//       "id": "loc_lake_oswego",
+//       "certification": ["Bathing & Clipping Certified"],
+//       "address": [
+//         {
+//           "address": "17711 Jean Way, Lake Oswego, OR 97035",
+//           "zip_code": "97035"
+//         }
+//       ],
+//       "time_slots": ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
+//     },
+//     {
+//       "id": "loc_oregon_city",
+//       "certification": ["Certified Groomer"],
+//       "address": [
+//         {
+//           "address": "19224 S Molalla Ave, Oregon City, OR 97045",
+//           "zip_code": "97045"
+//         }
+//       ],
+//       "time_slots": ["09:30 AM", "11:30 AM", "01:30 PM", "03:30 PM"]
+//     },
+//     {
+//       "id": "loc_salem",
+//       "certification": ["Senior Pet Stylist"],
+//       "address": [
+//         {
+//           "address": "3285 Commercial St SE, Salem, OR 97302",
+//           "zip_code": "97302"
+//         }
+//       ],
+//       "time_slots": ["08:30 AM", "10:30 AM", "12:30 PM", "02:30 PM"]
+//     },
+//     {
+//       "id": "loc_eugene",
+//       "certification": ["Certified Groomer", "Bathing Certified"],
+//       "address": [
+//         {
+//           "address": "4818 W 11th Ave, Eugene, OR 97402",
+//           "zip_code": "97402"
+//         }
+//       ],
+//       "time_slots": ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM"]
+//     },
+//     {
+//       "id": "loc_stayton",
+//       "certification": ["Certified Groomer"],
+//       "address": [
+//         {
+//           "address": "1385 N 1st St, Stayton, OR 97383",
+//           "zip_code": "97383"
+//         }
+//       ],
+//       "time_slots": ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
+//     },
+//     {
+//       "id": "loc_silverton",
+//       "certification": ["Bathing Certified"],
+//       "address": [
+//         {
+//           "address": "734 McClaine St, Silverton, OR 97381",
+//           "zip_code": "97381"
+//         }
+//       ],
+//       "time_slots": ["09:30 AM", "11:30 AM", "01:30 PM", "03:30 PM"]
+//     },
+//     {
+//       "id": "loc_canby",
+//       "certification": ["Senior Pet Stylist"],
+//       "address": [
+//         {
+//           "address": "197 S Hazel Dell Way, Canby, OR 97013",
+//           "zip_code": "97013"
+//         }
+//       ],
+//       "time_slots": ["08:30 AM", "10:30 AM", "12:30 PM", "02:30 PM"]
+//     },
+//     {
+//       "id": "loc_newberg",
+//       "certification": ["Certified Groomer"],
+//       "address": [
+//         {
+//           "address": "2300 E Hancock St, Newberg, OR 97132",
+//           "zip_code": "97132"
+//         }
+//       ],
+//       "time_slots": ["09:00 AM", "11:00 AM", "01:00 PM", "03:00 PM"]
+//     },
+//     {
+//       "id": "loc_cornelius",
+//       "certification": ["Certified Groomer"],
+//       "address": [
+//         {
+//           "address": "664 W Baseline St, Cornelius, OR 97113",
+//           "zip_code": "97113"
+//         }
+//       ],
+//       "time_slots": ["10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"]
+//     }
+//   ]
+  
