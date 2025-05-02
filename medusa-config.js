@@ -81,6 +81,8 @@ const projectConfig = {
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
+    port: process.env.PORT || 9000, // ✅ ADD THIS LINE
+    host: "0.0.0.0",                // ✅ OPTIONAL BUT RECOMMENDED FOR RENDER
   // Uncomment the following lines to enable REDIS
   // redis_url: REDIS_URL
 };
