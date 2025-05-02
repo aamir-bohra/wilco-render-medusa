@@ -22,15 +22,6 @@ try {
   dotenv.config({ path: process.cwd() + "/" + ENV_FILE_NAME });
 } catch (e) { }
 
-// const path = process.cwd() + "/" + ENV_FILE_NAME;
-// const fs = require("fs");
-
-// if (!fs.existsSync(path)) {
-//   console.error(`❌ ENV file not found at: ${path}`);
-// } else {
-//   dotenv.config({ path });
-//   console.log(`✅ Loaded env from ${path}`);
-// }
 
 
 console.log("🧪 ENV PORT:", process.env.PORT);
@@ -96,7 +87,7 @@ const projectConfig = {
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
-  port: parseInt(process.env.PORT) || 9000,   // ✅ cast to integer
+  port: process.env.PORT || 9000,   // ✅ cast to integer
   host: process.env.HOST || "0.0.0.0",        // ✅ use 0.0.0.0 for Render
   // Uncomment the following lines to enable REDIS
   // redis_url: REDIS_URL
