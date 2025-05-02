@@ -18,19 +18,19 @@ switch (process.env.NODE_ENV) {
     break;
 }
 
-// try {
-//   dotenv.config({ path: process.cwd() + "/" + ENV_FILE_NAME });
-// } catch (e) { }
+try {
+  dotenv.config({ path: process.cwd() + "/" + ENV_FILE_NAME });
+} catch (e) { }
 
-const path = process.cwd() + "/" + ENV_FILE_NAME;
-const fs = require("fs");
+// const path = process.cwd() + "/" + ENV_FILE_NAME;
+// const fs = require("fs");
 
-if (!fs.existsSync(path)) {
-  console.error(`❌ ENV file not found at: ${path}`);
-} else {
-  dotenv.config({ path });
-  console.log(`✅ Loaded env from ${path}`);
-}
+// if (!fs.existsSync(path)) {
+//   console.error(`❌ ENV file not found at: ${path}`);
+// } else {
+//   dotenv.config({ path });
+//   console.log(`✅ Loaded env from ${path}`);
+// }
 
 
 console.log("🧪 ENV PORT:", process.env.PORT);
