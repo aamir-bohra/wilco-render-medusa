@@ -13,8 +13,8 @@ switch (process.env.NODE_ENV) {
     break;
   case "development":
     ENV_FILE_NAME = ".env";
-  // default:
-  //   ENV_FILE_NAME = ".env";
+  default:
+    ENV_FILE_NAME = ".env";
     break;
 }
 
@@ -23,14 +23,15 @@ switch (process.env.NODE_ENV) {
 // } catch (e) { }
 
 const path = process.cwd() + "/" + ENV_FILE_NAME;
-const result = dotenv.config({ path });
+const fs = require("fs");
 
-if (result.error) {
-  console.error("❌ Failed to load .env file:", path);
-  console.error(result.error);
+if (!fs.existsSync(path)) {
+  console.error(`❌ ENV file not found at: ${path}`);
 } else {
-  console.log("✅ Loaded .env from:", path);
+  dotenv.config({ path });
+  console.log(`✅ Loaded env from ${path}`);
 }
+
 
 console.log("🧪 ENV PORT:", process.env.PORT);
 console.log("🧪 ENV DATABASE_URL:", process.env.DATABASE_URL);
