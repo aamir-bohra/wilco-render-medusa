@@ -1,0 +1,34 @@
+# render.yaml
+# Defines a web service for Medusa backend + a free Postgres database
+
+services:
+  - type: web
+    name: medusa-backend
+    env: node
+    plan: free
+    branch: main      # or your default branch
+    buildCommand: yarn install
+    startCommand: |
+      # increase Node heap, set host & port, then build & start
+      NODE_OPTIONS=--max-old-space-size=2048 \
+      PORT=3000 HOST=0.0.0.0 \
+      yarn build-and-start
+    envVars:
+      - key: PORT
+        value: "3000"
+      - key: HOST
+        value: "0.0.0.0"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: pet-grooming
+          property: connectionString
+      - key: JWT_SECRET
+        value: "something"
+      - key: COOKIE_SECRET
+        value: "something"
+
+databases:
+  - name: pet-grooming
+    engine: postgres
+    version: "15"
+    plan: free
