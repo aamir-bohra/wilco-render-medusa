@@ -39,7 +39,7 @@
     "body-parser": "^1.19.0",
     "caniuse-lite": "^1.0.30001715",
     "cors": "^2.8.5",
-    "dotenv": "16.3.1",
+    "dotenv": "17.0.1",
     "express": "^4.17.2",
     "install": "^0.13.0",
     "medusa-fulfillment-manual": "^1.1.39",
